@@ -11,7 +11,7 @@ function isPrime(num) {
 
 if (value === null || isNaN(value) || value.trim() === '' || value <= 0) {
     alert('введенное значение не является целым положительным числом');
-} else if (!Number.isInteger(value)) {
+} else if (!Number.isInteger(+value)) {
     alert('введенное значение является дробным числом');
 } else if (isPrime(value)) {
     alert('простое число');
